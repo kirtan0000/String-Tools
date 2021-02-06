@@ -1,0 +1,83 @@
+{
+  "name": "string-tools",
+  "displayName": "String Tools",
+  "description": "This will manipulate strings.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "publisher": "KirtanMagan",
+  "categories": [
+    "Other"
+  ],
+  "author": {
+    "name": "kirtan000"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onCommand:string-tools.reverseString",
+    "onCommand:string-tools.StrToBase64",
+    "onCommand:string-tools.Base64ToStr",
+    "onCommand:string-tools.StrToAscii",
+    "onCommand:string-tools.StrToBinary",
+    "onCommand:string-tools.BinaryToStr"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "string-tools.reverseString",
+        "title": "Reverse String"
+      },
+      {
+        "command": "string-tools.StrToBase64",
+        "category": "Convert",
+        "title": "String to Base64"
+      },
+      {
+        "command": "string-tools.Base64ToStr",
+        "category": "Convert",
+        "title": "Base64 to String"
+      },
+      {
+        "command": "string-tools.StrToAscii",
+        "category": "Convert",
+        "title": "String To ASCII"
+      },
+      {
+        "command": "string-tools.StrToBinary",
+        "category": "Convert",
+        "title": "String To Binary"
+      },
+      {
+        "command": "string-tools.BinaryToStr",
+        "category": "Convert",
+        "title": "Binary To String"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirtan0000/String-Tools"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.53.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
