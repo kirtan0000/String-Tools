@@ -64,6 +64,11 @@
     "type": "git",
     "url": "https://github.com/kirtan0000/String-Tools"
   },
+  "bugs": {
+    "url": "https://github.com/kirtan0000/String-Tools/issues",
+    "email": "kirtan@raakeshpatel.com"
+  },
+  "homepage": "https://github.com/kirtan0000/String-Tools/blob/master/README.md",
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
